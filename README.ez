@@ -1,0 +1,9 @@
+Name: gn-build
+URL: https://github.com/timniederhausen/gn-build
+Commit: 1e713736ed2ccb415bc4f573e9f9c3d905e93ce2
+License: BSD
+Description: Basic //build directory for use with Chromium's GN
+
+Changes:
+- Add // as default_include_dirs
+- Change default standard to c++11

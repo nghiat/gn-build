@@ -1310,3 +1310,7 @@ config("shared_library_config") {
     configs += [ "//build/config/ios:ios_dynamic_flags" ]
   }
 }
+
+config("default_include_dirs") {
+  include_dirs = [ "//" ]
+}
