@@ -1235,6 +1235,11 @@ config("release") {
   defines = [ "NDEBUG" ]
 }
 
+# Enables logging --------------------------------------------------------------
+config("logging") {
+  defines = [ "ENABLE_LOGGING" ]
+}
+
 # Default libraries ------------------------------------------------------------
 
 # This config defines the default libraries applied to all targets.

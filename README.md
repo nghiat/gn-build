@@ -29,10 +29,11 @@ All variables described here are build args and can be overridden in the user's
 (these variables are available everywhere)
 
 * `is_debug` (default: true): Toggle between debug and release builds.
-* `is_clang` (default: false): Favor Clang over the platform default (GCC/MSVC).
+* `is_clang` (default: true): Favor Clang over the platform default (GCC/MSVC).
 * `is_official_build` (default: !is_debug): Set to enable the official build
   level of optimization. This enables an additional level of optimization above
   release (!is_debug).
+* `enable_logging` (default true): This enables logging even in optimized build.
 * `external` (default: "//external"): Label of the external projects directory.
   By convention, all 3rd-party projects should end up in this directory, so they
   can depend on each other (e.g. $external/mysql_connector -> $external/zlib)
