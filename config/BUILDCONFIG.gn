@@ -130,9 +130,6 @@ declare_args() {
   # separate flags.
   is_official_build = false
 
-  # Enables logging even in official build so you can debug optimized build.
-  enable_logging = true
-  
   # Set to true when compiling with the Clang compiler.
   is_clang = true
 
@@ -361,10 +358,6 @@ if (is_debug) {
   default_compiler_configs += [ "//build/config:debug" ]
 } else {
   default_compiler_configs += [ "//build/config:release" ]
-}
-
-if (enable_logging) {
-  default_compiler_configs += [ "//build/config:logging" ]
 }
 
 # Static libraries and source sets use only the compiler ones.
